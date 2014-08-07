@@ -7,10 +7,12 @@ CONFIG += c++11
 SOURCES += main.cpp \
     product.cpp \
     audiotrack.cpp \
-    musiccd.cpp
+    musiccd.cpp \
+    gamecd.cpp
 
 HEADERS += \
     product.h \
     audiotrack.h \
-    musiccd.h
+    musiccd.h \
+    gamecd.h
 

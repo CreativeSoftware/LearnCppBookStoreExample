@@ -10,6 +10,8 @@ MusicCD::MusicCD(std::vector<AudioTrack> myTracks)
     :d_myTracks(std::move(myTracks))
 {}
 
+MusicCD::~MusicCD(){}
+
 //Mutator Functions
 void MusicCD::addNewTracks(std::vector<AudioTrack> & myTracks){
 
@@ -23,7 +25,7 @@ void MusicCD::addNewTracks(std::vector<AudioTrack> & myTracks){
     std::cout << "How many tracks will have this CD? " << std::endl;
     std::cin >> noTracks;
 
-    for(int i=0; i < noTracks; i++){
+    for(int i=0; i <= noTracks; i++){
         std::cout << "Track Number: ";
         std::cin >> trackno;
         myTrack.setTrackNumber(trackno);

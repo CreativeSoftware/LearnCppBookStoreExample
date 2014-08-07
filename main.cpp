@@ -17,10 +17,17 @@ int main()
     prod.setAuthor("new author");
     cout << prod.author() << endl;
 
-    vector<AudioTrack> newTracks;
-    MusicCD cd(newTracks);
-    cd.addNewTracks(newTracks);
-//    cout << prod.title() << "\n";
+//    vector<AudioTrack> newTracks;
+//    MusicCD cd(newTracks);
+//    cd.addNewTracks(newTracks);
+
+    vector<AudioTrack> NewTracks;
+    NewTracks.emplace_back(1,"My Title", 1/*minutes*/, 1/*seconds*/);
+    MusicCD cd(NewTracks);
+    cd.addNewTracks(NewTracks);
+
+
+
 
 //    AudioTrack MyTrack(1, "Hello", 1, 1);
 
