@@ -15,7 +15,7 @@ MusicCD::MusicCD(std::vector<AudioTrack> myTracks)
 void MusicCD::addNewTracks(std::vector<AudioTrack> & myTracks){
 
      int noTracks;
-     AudioTrack myTrack();
+     AudioTrack myTrack;
 
      int trackno;
 //     std::string mtitle;
@@ -27,7 +27,7 @@ void MusicCD::addNewTracks(std::vector<AudioTrack> & myTracks){
     for(int i=0; i < noTracks; i++){
         std::cout << "Track Number: ";
         std::cin >> trackno;
-        myTrack().setTrackNumber(trackno);
+        myTrack.setTrackNumber(trackno);
         //std::cin >> myTrack.setTrackNumber();
         //std::getline(myTrack.setTrackNumber());
 
