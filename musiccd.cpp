@@ -43,6 +43,10 @@ void MusicCD::addNewTracks(std::vector<AudioTrack> & myTracks){
 
     }
     std::cout << std::endl;
+
+    //Test block
+
+    std::cout << "size of"<< myTracks.size() << std::endl;
 }
 
 
