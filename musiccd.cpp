@@ -8,7 +8,6 @@ MusicCD::MusicCD()
 
 MusicCD::MusicCD(std::vector<AudioTrack> myTracks)
     :d_myTracks(std::move(myTracks))
-    //:d_myTracks(myTracks)
 {}
 
 //Mutator Functions
@@ -18,8 +17,8 @@ void MusicCD::addNewTracks(std::vector<AudioTrack> & myTracks){
      AudioTrack myTrack;
 
      int trackno;
-//     std::string mtitle;
-//     int min, sec;
+     std::string mtitle;
+     int min, sec;
 
     std::cout << "How many tracks will have this CD? " << std::endl;
     std::cin >> noTracks;
@@ -28,15 +27,18 @@ void MusicCD::addNewTracks(std::vector<AudioTrack> & myTracks){
         std::cout << "Track Number: ";
         std::cin >> trackno;
         myTrack.setTrackNumber(trackno);
-        //std::cin >> myTrack.setTrackNumber();
-        //std::getline(myTrack.setTrackNumber());
 
-//        std::cout << "Music Title: ";
-//        //std::cin >> mtitle;
-//        std::cout << "Minutes ";
-//        //std::cin >> min;
-//        std::cout << "Seconds ";
-//        //std::cin >> sec;
+        std::cout << "Music Title: ";
+        std::cin >> mtitle;
+        myTrack.setTrackTitle(mtitle);
+
+        std::cout << "Minutes ";
+        std::cin >> min;
+        myTrack.setMinutes(min);
+
+        std::cout << "Seconds ";
+        std::cin >> sec;
+        myTrack.setSeconds(sec);
 
         myTracks.push_back(myTrack);
         std::cout << std::endl;

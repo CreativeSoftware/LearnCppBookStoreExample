@@ -1,6 +1,7 @@
 #include <iostream>
 #include "product.h"
 #include "musiccd.h"
+#include "audiotrack.h"
 
 using namespace std;
 
@@ -15,6 +16,10 @@ int main()
 
     prod.setAuthor("new author");
     cout << prod.author() << endl;
+
+    vector<AudioTrack> newTracks;
+    MusicCD cd(newTracks);
+    cd.addNewTracks(newTracks);
 //    cout << prod.title() << "\n";
 
 //    AudioTrack MyTrack(1, "Hello", 1, 1);
