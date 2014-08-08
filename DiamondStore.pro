@@ -8,11 +8,13 @@ SOURCES += main.cpp \
     product.cpp \
     audiotrack.cpp \
     musiccd.cpp \
-    gamecd.cpp
+    gamecd.cpp \
+    album.cpp
 
 HEADERS += \
     product.h \
     audiotrack.h \
     musiccd.h \
-    gamecd.h
+    gamecd.h \
+    album.h
 

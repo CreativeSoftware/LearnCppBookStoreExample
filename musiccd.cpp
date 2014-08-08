@@ -25,7 +25,7 @@ void MusicCD::addNewTracks(std::vector<AudioTrack> & myTracks){
     std::cout << "How many tracks will have this CD? " << std::endl;
     std::cin >> noTracks;
 
-    for(int i=0; i <= noTracks; i++){
+    for(unsigned int i=0; i < noTracks; i++){
         std::cout << "Track Number: ";
         std::cin >> trackno;
         myTrack.setTrackNumber(trackno);
@@ -48,9 +48,18 @@ void MusicCD::addNewTracks(std::vector<AudioTrack> & myTracks){
     }
     std::cout << std::endl;
 
-    //Test block
+}
 
-    std::cout << "size of"<< myTracks.size() << std::endl;
+void MusicCD::printTrackVector(std::vector<AudioTrack> & myTracks){
+
+    unsigned int size = myTracks.size();
+    for (unsigned int i=0; i < size; i++){
+        std::cout << "Track Number: " << myTracks[i].trackNumber() << std::endl;
+        std::cout << "Track Title: " << myTracks[i].trackTitle() << std::endl;
+        std::cout << "Track has  " << myTracks[i].minutes()
+                  << " minutes " << myTracks[i].seconds() << " seconds " << std::endl;
+    }
+
 }
 
 

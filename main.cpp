@@ -22,11 +22,10 @@ int main()
 //    cd.addNewTracks(newTracks);
 
     vector<AudioTrack> NewTracks;
-    NewTracks.emplace_back(1,"My Title", 1/*minutes*/, 1/*seconds*/);
+    NewTracks.emplace_back(1/*Track Number*/,"My Title", 1/*minutes*/, 1/*seconds*/);
     MusicCD cd(NewTracks);
     cd.addNewTracks(NewTracks);
-
-
+    cd.printTrackVector(NewTracks);
 
 
 //    AudioTrack MyTrack(1, "Hello", 1, 1);

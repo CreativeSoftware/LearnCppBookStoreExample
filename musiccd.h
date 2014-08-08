@@ -24,6 +24,7 @@ public:
 
     void addNewTracks(std::vector <AudioTrack> &);
 
+    void printTrackVector(std::vector < AudioTrack > &) ;
 
 
 };
