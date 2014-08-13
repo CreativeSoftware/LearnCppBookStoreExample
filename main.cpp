@@ -1,5 +1,6 @@
 #include <iostream>
-#include "product.h"
+//#include "product.h"
+#include "gamecd.h"
 #include "musiccd.h"
 #include "audiotrack.h"
 
@@ -25,8 +26,11 @@ int main()
     NewTracks.emplace_back(1/*Track Number*/,"My Title", 1/*minutes*/, 1/*seconds*/);
     MusicCD cd(NewTracks);
     cd.addNewTracks(NewTracks);
-    cd.printTrackVector(NewTracks);
+//    cd.printTrackVector(NewTracks);
 
+    GameCD game(1231,"the game","author","pub",1291,10.0,"PS4", 4);
+    game.setPrice(50.0);
+    game.printProductData();
 
 //    AudioTrack MyTrack(1, "Hello", 1, 1);
 

@@ -48,7 +48,7 @@ public:
     void setYear(int year);
     void setPrice(float price);
 
-//    void printProductData(void) const;
+    void printProductData(void) const;
 
 
 

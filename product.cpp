@@ -79,12 +79,12 @@ void Product::setYear(int year){
     d_year = year;
 }
 
-//void Product::printProductData(void) const{
+void Product::printProductData(void) const{
 
-//    std::cout << "Bar code: " << d_barCode << std::endl;
-//    std::cout << "Title: " << d_title << std::endl;
-//    std::cout << "Author: " << d_author << std::endl;
-//    std::cout << "Publisher: " << d_publisher << std::endl;
-//    std::cout << "Price: " << d_price << std::endl;
-//    std::cout << "Year: " << d_year << std::endl;
-//}
+    std::cout << "Bar code: " << d_barCode << std::endl;
+    std::cout << "Title: " << d_title << std::endl;
+    std::cout << "Author: " << d_author << std::endl;
+    std::cout << "Publisher: " << d_publisher << std::endl;
+    std::cout << "Price: " << d_price << std::endl;
+    std::cout << "Year: " << d_year << std::endl;
+}

@@ -9,12 +9,18 @@ SOURCES += main.cpp \
     audiotrack.cpp \
     musiccd.cpp \
     gamecd.cpp \
-    album.cpp
+    album.cpp \
+    book.cpp \
+    labelcolor.cpp \
+    comicbook.cpp
 
 HEADERS += \
     product.h \
     audiotrack.h \
     musiccd.h \
     gamecd.h \
-    album.h
+    album.h \
+    book.h \
+    labelcolor.h \
+    comicbook.h
 

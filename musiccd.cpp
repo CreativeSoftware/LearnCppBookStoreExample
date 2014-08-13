@@ -4,7 +4,7 @@ MusicCD::MusicCD()
 {
 }
 
-//Overload Condsxtrutor
+//Overload Condstrutor
 
 MusicCD::MusicCD(std::vector<AudioTrack> myTracks)
     :d_myTracks(std::move(myTracks))
@@ -15,7 +15,7 @@ MusicCD::~MusicCD(){}
 //Mutator Functions
 void MusicCD::addNewTracks(std::vector<AudioTrack> & myTracks){
 
-     int noTracks;
+     unsigned int noTracks;
      AudioTrack myTrack;
 
      int trackno;
@@ -50,16 +50,16 @@ void MusicCD::addNewTracks(std::vector<AudioTrack> & myTracks){
 
 }
 
-void MusicCD::printTrackVector(std::vector<AudioTrack> & myTracks){
+//void MusicCD::printTrackVector(std::vector<AudioTrack> & myTracks){
 
-    unsigned int size = myTracks.size();
-    for (unsigned int i=0; i < size; i++){
-        std::cout << "Track Number: " << myTracks[i].trackNumber() << std::endl;
-        std::cout << "Track Title: " << myTracks[i].trackTitle() << std::endl;
-        std::cout << "Track has  " << myTracks[i].minutes()
-                  << " minutes " << myTracks[i].seconds() << " seconds " << std::endl;
-    }
+//    unsigned int size = myTracks.size();
+//    for (unsigned int i=0; i < size; i++){
+//        std::cout << "Track Number: " << myTracks[i].trackNumber() << std::endl;
+//        std::cout << "Track Title: " << myTracks[i].trackTitle() << std::endl;
+//        std::cout << "Track has  " << myTracks[i].minutes()
+//                  << " minutes " << myTracks[i].seconds() << " seconds " << std::endl;
+//    }
 
-}
+//}
 
 

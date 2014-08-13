@@ -24,8 +24,6 @@ void Album::addNewCd(std::vector<MusicCD> & myCds){
 
         std::cout << "Insert the data of CD no " << i << "\n";
 
-        //Should I use here the code at main?
-        //Should I create here the Track objects?
 
 
     }
